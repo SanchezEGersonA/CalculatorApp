@@ -187,6 +187,16 @@ document.querySelector('#btnSquare').addEventListener('click', () => {
     inputValue.value = "0";
 });
 
+// Negative event
+document.querySelector('#btnNegative').addEventListener('click', () => {
+    let currentValue = Number(inputValue.value);
+    if (currentValue !== 0) {
+        result = currentValue * -1;
+    }
+    inputResult.value = String(result);
+    inputValue.value = '0';
+});
+
 // Clear event
 document.querySelector('#btnCE').addEventListener('click', () => {
     inputResult.value = '';
